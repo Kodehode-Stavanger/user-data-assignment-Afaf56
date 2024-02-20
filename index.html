@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>records for pastiants</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Pataint`s information</h2>
+      <form id="task-form">
+        <input
+          id="user-input"
+          type="text"
+          name="task-input"
+          placeholder="Enter Name"
+        />
+        <input id="d-input" type="date" name="date-input" />
+        <input
+          id="m-input"
+          type="email"
+          name="mail-input"
+          placeholder="ex:myname@example.com"
+        />
+        <button id="Submit">Submit</button>
+      </form>
+
+      <div id="divSort">
+        <label for="sort-by">Sort by:</label>
+        <select name="sort-by" id="sort-by">
+          <option></option>
+          <option value="alpha-asc">Alphabetically ascending</option>
+          <option value="alpha-desc">Alphabetically descending</option>
+        </select>
+      </div>
+    </header>
+
+    <main><div id="list-container"></div></main>
+  </body>
+</html>
